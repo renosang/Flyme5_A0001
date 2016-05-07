@@ -3514,6 +3514,8 @@
 
     :cond_13
     :goto_d
+    invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->onBatteryLow(Lcom/android/server/BatteryService;)V
+
     iget-object v0, p0, Lcom/android/server/BatteryService;->mLed:Lcom/android/server/BatteryService$Led;
 
     invoke-virtual {v0}, Lcom/android/server/BatteryService$Led;->updateLightsLocked()V
@@ -4291,6 +4293,8 @@
     if-ge v0, v1, :cond_1
 
     :cond_0
+    invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->writeMessageToFileIfNoPowerLocked(Lcom/android/server/BatteryService;)V
+
     iget-object v0, p0, Lcom/android/server/BatteryService;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/server/BatteryService$2;
@@ -4524,6 +4528,8 @@
     invoke-virtual {v2, v3, v5, v0, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     invoke-direct {p0}, Lcom/android/server/BatteryService;->updateBatteryWarningLevelLocked()V
+
+    invoke-static {}, Lcom/android/server/BatteryService$FlymeInjector;->onBootPhase()V
 
     monitor-exit v4
 
