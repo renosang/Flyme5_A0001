@@ -53,7 +53,7 @@
 
 .field private static final DEFAULT_REEVALUATE_DELAY_MS:I = 0x1388
 
-.field private static final DEFAULT_SERVER:Ljava/lang/String; = "connectivitycheck.android.com"
+.field private static final DEFAULT_SERVER:Ljava/lang/String; = "connect.rom.miui.com"
 
 .field private static final EVENT_APP_BYPASSED_CAPTIVE_PORTAL:I = 0x8200b
 
@@ -400,7 +400,7 @@
 
     if-nez v0, :cond_0
 
-    const-string v0, "connectivitycheck.android.com"
+    const-string v0, "connect.rom.miui.com"
 
     iput-object v0, p0, Lcom/android/server/connectivity/NetworkMonitor;->mServer:Ljava/lang/String;
 
