@@ -55,7 +55,7 @@ vendor_remove_files := vendor/lib/soundfx/libmaxxeffect-cembedded.so vendor/lib/
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
 vendor_saved_apps := AntHalService Bluetooth BluetoothExt com.qualcomm.location ConfigPanel\
-                     NfcNci PPPreference QuickBoot shutdownlistener CameraNext TagGoogle \
+                     NfcNci PPPreference QuickBoot shutdownlistener CameraNext TagGoogle CMSettingsProvider \
                      KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
                      ProxyHandler Shell DefaultContainerService WAPPushManager Stk TimeService qcrilmsgtunnel
