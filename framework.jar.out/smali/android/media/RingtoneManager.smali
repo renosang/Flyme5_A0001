@@ -453,7 +453,9 @@
 
     move-result-object v9
 
+    if-eqz v9, :cond_wxl
     return-object v9
+    :cond_wxl
 
     const/4 v0, 0x0
 

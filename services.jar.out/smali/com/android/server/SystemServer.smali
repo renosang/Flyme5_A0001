@@ -3071,7 +3071,15 @@
 
     :cond_1d
 
-    goto/16 :goto_flyme_0
+    const-string v4, "ro.hwui.disable_asset_atlas"
+
+    const/4 v5, 0x1
+
+    invoke-static {v4, v5}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1e
 
     if-nez v64, :cond_1e
 
@@ -3160,7 +3168,6 @@
     .end local v74    # "gestureService":Lcom/android/server/gesture/GestureService;
     .restart local v73    # "gestureService":Lcom/android/server/gesture/GestureService;
     :cond_1f
-    :goto_flyme_0
     :goto_28
     move-object/from16 v0, p0
 
