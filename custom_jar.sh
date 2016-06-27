@@ -13,4 +13,7 @@ if [ "$jarBaseName" = "framework" ];then
 		echo ">>> in custom_jar moving $dir"
 		mv $tempSmaliDir/smali/$dir $tempSmaliDir/smali_classes2/$dir
 	done
+elif [ "$jarBaseName" = "services" ];then
+	echo ">>> in custom_jar $jarBaseName"
+	cp -rf overlay/services/* $tempSmaliDir/
 fi
